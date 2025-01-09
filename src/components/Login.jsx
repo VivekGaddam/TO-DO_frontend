@@ -18,6 +18,10 @@ const Login = ({ setIsAuthenticated }) => {
       console.log(error)
     }
   };
+  const handleClick = async (e) => {
+    e.preventDefault();
+    navigate('/register')
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -43,7 +47,7 @@ const Login = ({ setIsAuthenticated }) => {
       </div>
       <button type="submit">Login</button>
       <div className="register">
-        Dont't have Account? Register <a href="/register">Click</a>
+        Dont't have Account? Register <a href="/" onClick={handleClick}>Click</a>
       </div>
     </form>
 
