@@ -1,0 +1,130 @@
+.task-add {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.but {
+  height: 200px;
+  width: 240px;
+  border: 1px solid #e76f51;
+  background-color: #e76f51;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.but p {
+  text-wrap-style: wrap;
+  color: white;
+}
+
+button {
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  border: 1px solid #e76f51;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #e76f51;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.tryy {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.delete {
+  text-align: center;
+}
+
+.delete button {
+  display: none; 
+  width: 60px;
+  height: 30px;
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tryy:hover .delete button {
+  display: block;
+}
+
+.delete button:hover {
+  background-color: #d65a3e;
+  text-align: center;
+  transform: translateY(-2px);
+}
+
+.adding {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.adding input {
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #e76f51;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.adding button {
+  width: 100px;
+  height: 35px;
+  font-size: 0.9rem;
+  border: 1px solid #e76f51;
+  border-radius: 5px;
+  background-color: #e76f51;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gun {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.adding button:hover {
+  background-color: #d65a3e;
+  transform: translateY(-2px);
+}

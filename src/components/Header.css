@@ -1,0 +1,21 @@
+.Header{
+    display: flex;
+    background-color: #e76f51;
+    height: 60px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+h1{
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 40px;
+    margin-left: 40px;
+    transform: scale(1.5);
+
+}
+button{
+    
+    width: 60px;
+    height: 10px;
+}
