@@ -21,7 +21,6 @@ function App() {
         <Header isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
         <div>
           <Routes>
-            {/* Redirect authenticated users from login and register routes */}
             <Route
               path="/login"
               element={isAuthenticated ? <Navigate to="/dashboard" /> : <Login setIsAuthenticated={setIsAuthenticated} />}
@@ -30,14 +29,10 @@ function App() {
               path="/register"
               element={isAuthenticated ? <Navigate to="/dashboard" /> : <Register setIsAuthenticated={setIsAuthenticated} />}
             />
-
-            {/* Protected route for Dashboard */}
             <Route
               path="/dashboard"
               element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
             />
-
-            {/* Redirect any unknown routes to the correct location */}
             <Route path="*" element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} />} />
           </Routes>
         </div>
