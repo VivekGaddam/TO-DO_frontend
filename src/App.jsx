@@ -27,7 +27,7 @@ function App() {
             />
             <Route
               path="/register"
-              element={isAuthenticated ? <Navigate to="/dashboard" /> : <Register setIsAuthenticated={setIsAuthenticated} />}
+              element={<Register setIsAuthenticated={setIsAuthenticated} />}
             />
             <Route
               path="/dashboard"
